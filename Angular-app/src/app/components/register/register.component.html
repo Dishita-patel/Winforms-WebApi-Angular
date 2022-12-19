@@ -1,0 +1,50 @@
+<form [formGroup]="registerForm" class="border p-3" (ngSubmit)="onSubmit()">
+    <div class="row g-0">
+      <div class="col text-center p-2 mb-3 bg-light">
+        <span class="fs-3"> Resgister </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="firstname" class="form-lable"> First Name</label>
+        <input type="text" class="form-control" name="loginName" id="firstname"
+        formControlName="firstname"> 
+      </div>
+      <div class="col">
+        <label for="lastname" class="form-lable"> Last Name</label>
+        <input type="text" class="form-control" name="" id="lastname"
+        formControlName="lastname">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <label for="loginName" class="form-lable"> loginName</label>
+        <input type="loginName" class="form-control" name="" id="loginName"
+        formControlName="loginName">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <label for="password" class="form-lable"> Password</label>
+        <input type="password" class="form-control" name="" id="password"
+        formControlName="password">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <label for="repPass" class="form-lable"> Repeat Password</label>
+        <input type="password" class="form-control" name="" id="repPass"
+        formControlName="repPass">
+        </div>
+    </div>
+    <div class="row">
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary"> Submit</button>
+            </div>
+        </div>
+    </div>
+  </form>

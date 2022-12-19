@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-striped"> 
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th></th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let buyer of buyerData">
+            <td>{{buyer.BuyerID}}</td>
+            <td>{{buyer.FirstName}}</td>
+            <td>{{buyer.LastName}}</td>
+            <td><a routerLink='/buyer/{{buyer.BuyerID}}' class="btn btn-primary" >Visit Profile</a></td>
+           </tr>
+    </tbody>
+  </table>
+  </div>
+<!-- <button class="btn btn-primary" (click)="logout()"> Logout </button> -->
